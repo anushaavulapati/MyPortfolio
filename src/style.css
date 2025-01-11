@@ -1,17 +1,17 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(107, 103, 103, 0.93),
+    rgba(219, 216, 226, 0.904)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(15, 12, 12, 0.93),
+    rgba(219, 216, 226, 0.904)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #060606;
 }
 
 .purple {
@@ -57,18 +57,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #504d19;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(153, 144, 144, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(216, 208, 208, 0.911);
   border-radius: 12px;
 }
 
@@ -76,9 +76,10 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  /* background-color: #938f8ff1 !important; */
+  /* background-image: var(--section-background-color) !important; */
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(167, 163, 191, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -97,7 +98,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #171515 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -144,7 +145,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #b4b6c5 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -160,7 +161,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: #272725f1 !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -194,7 +195,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #272725f1;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -254,19 +255,30 @@ button:focus {
   padding-top: 80px !important;
 }
 
+.home {
+  position: relative;
+  /* z-index: -2; */
+  background-image: var(--section-background-color) !important;
+  /* background-position: top center;
+  background-repeat: no-repeat; */
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
 .home-section {
   position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
+  /* z-index: -2; */
+  /* background-image: var(--section-background-color) !important; */
+  /* background-position: top center;
+  background-repeat: no-repeat; */
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
 
 .home-content {
+  /* background-image: var(--section-background-color) !important; */
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: rgb(22, 20, 20);
   text-align: left;
 }
 
@@ -281,17 +293,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #0d0d0b;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #0d0d0b !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #0d0d0b !important;
 }
 
 @media (max-width: 767px) {
@@ -319,12 +331,13 @@ button:focus {
 
 .home-about-section {
   position: relative;
+  z-index: 2;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
 
 .home-about-description {
-  color: white !important;
+  color: #0d0d0b !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -339,7 +352,7 @@ button:focus {
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: #0d0d0b !important;
 }
 
 .home-about-social-links {
@@ -358,7 +371,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: rgba(131, 129, 129, 0.972) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -371,7 +384,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #555451;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -379,13 +392,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #51514f;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #0f0f0e;
+  box-shadow: 0 0 5px #363632;
+  text-shadow: 0 0 2px #363632;
 }
 
 .social-icons {
@@ -395,15 +408,16 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #141412 !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
-  bottom: 0 !important;
+  /* background-image: var(--section-background-color) !important; */
+  /* background-color: rgb(176, 171, 171); */
+  /* bottom: 0 !important; */
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
 }
@@ -413,7 +427,7 @@ button:focus {
 
 .footer-body {
   z-index: 1;
-  text-align: center !important;
+  text-align: right !important;
 }
 
 @media (max-width: 767px) {
@@ -428,7 +442,7 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: rgb(23, 22, 22) !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -439,7 +453,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #cdcbcf !important;
 }
 /* --------- */
 /* Projects */
@@ -460,8 +474,8 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
+  box-shadow: 0 4px 5px 3px rgba(108, 108, 107, 0.403) !important;
+  color: rgb(12, 11, 11) !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -470,38 +484,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
-}
-
-.blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.blog-link {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.blog-link:hover {
-  cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 4px 4px 5px rgba(51, 51, 50, 0.561) !important;
 }
 
 .card-img-top {
@@ -517,22 +500,22 @@ button:focus {
 }
 
 .btn-primary {
-  color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  color: #222221 !important;
+  background-color: #9a9a96 !important;
+  border-color: #545452f6 !important;
 }
 
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  color: #0d0d0b !important;
+  background-color: #a7a69ed7 !important;
+  border-color: #a7a69ed7 !important;
 }
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: #0d0d0b !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -547,7 +530,7 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: rgb(68, 63, 63) !important;
 }
 
 .tech-icons {
@@ -583,7 +566,7 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: rgb(12, 11, 11) !important;
   background-color: transparent !important;
 }
 
@@ -645,7 +628,7 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #c9cf15;
   position: relative;
 }
 
@@ -727,7 +710,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #726f6f !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -735,8 +718,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #5c5a5a !important;
+  border-color: #7c7979 !important;
 }
 .fork-btn-inner::after {
   display: none !important;

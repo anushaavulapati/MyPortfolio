@@ -1,4 +1,13 @@
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(107, 103, 103, 0.93),
+    rgba(219, 216, 226, 0.904)
+  );
+}
+
 .App {
+ background-image: var(--section-background-color) !important;
   text-align: center;
 }
 

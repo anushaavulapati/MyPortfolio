@@ -7,34 +7,27 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+          <p style={{ fontSize: "1em", textAlign: "justify" }}>
+            Hi, I am Anusha Avulapati currently pursuing my master's degree in Computer Science at Stony Brook University.
+            I am a software developer with expertise in MERN stack development.
+            I hold a Bachelor of Technology degree in Computer Science from Vellore Institute of Technology and
+            have professional experience working with Shell India Private Ltd and Sailotech as a software engineer and data analyst intern, respectively.
+            I am actively seeking job opportunities to further my career.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Listening to Music
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Playing Badminton
             </li>
             <li className="about-activity">
               <ImPointRight /> Travelling
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>
